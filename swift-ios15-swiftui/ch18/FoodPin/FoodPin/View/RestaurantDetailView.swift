@@ -147,6 +147,7 @@ struct RestaurantDetailView: View {
                 try? self.context.save()
             }
         }
+
     }
 }
     
@@ -155,7 +156,7 @@ struct RestaurantDetailView_Previews: PreviewProvider {
         NavigationView {
             RestaurantDetailView(restaurant: (PersistenceController.testData?.first)!)
                 .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-            
+
         }
         .accentColor(.white)
     }

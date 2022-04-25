@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RestaurantListView: View {
+    @Environment(\.managedObjectContext) var context
     @FetchRequest(
         entity: Restaurant.entity(),
         sortDescriptors: [])
@@ -15,29 +16,26 @@ struct RestaurantListView: View {
     
     @State private var showNewRestaurant = false
     
-    @Environment(\.managedObjectContext) var context
-    
     var body: some View {
         NavigationView {
-                List {
-                    if restaurants.count == 0 {
-                        Image("emptydata")
-                            .resizable()
-                            .scaledToFit()
-                    } else {
-                        ForEach(restaurants.indices, id: \.self) { index in
-                            ZStack(alignment: .leading) {
-                                NavigationLink(destination: RestaurantDetailView(restaurant: restaurants[index])) {
-                                    EmptyView()
-                                }
-                                .opacity(0)
-
-                                BasicTextImageRow(restaurant: restaurants[index])
+            List {
+                if restaurants.count == 0 {
+                    Image("emptydata")
+                        .resizable()
+                        .scaledToFit()
+                } else {
+                    ForEach(restaurants.indices, id: \.self) { index in
+                        ZStack(alignment: .leading) {
+                            NavigationLink(destination: RestaurantDetailView(restaurant: restaurants[index])) {
+                                EmptyView()
                             }
+                            .opacity(0)
+
+                            BasicTextImageRow(restaurant: restaurants[index])
                         }
-                        .onDelete(perform: deleteRecord)
-                        .listRowSeparator(.hidden)
                     }
+                    .onDelete(perform: deleteRecord)
+                    .listRowSeparator(.hidden)
                 }
             }
             .listStyle(.plain)
@@ -150,7 +148,8 @@ struct BasicTextImageRow: View {
             
             let defaultText = "Just checking in at \(restaurant.name)"
             
-            if let imageToShare = Image(uiImage: UIImage(data: restaurant.image)!) {
+            if let imageData = restaurant.image,
+               let imageToShare = UIImage(data: imageData) {
                 ActivityView(activityItems: [defaultText, imageToShare])
             } else {
                 ActivityView(activityItems: [defaultText])
@@ -220,4 +219,3 @@ struct RestaurantListView_Previews: PreviewProvider {
             .previewLayout(.sizeThatFits)
     }
 }
-

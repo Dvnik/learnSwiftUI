@@ -9,7 +9,9 @@ import SwiftUI
 
 struct NewRestaurantView: View {
     @Environment(\.dismiss) var dismiss
+    @Environment(\.managedObjectContext) var context
     
+    @ObservedObject private var restaurantFormViewModel: RestaurantFormViewModel
     
     @State private var showPhotoOptions = false
     
@@ -23,11 +25,6 @@ struct NewRestaurantView: View {
     }
 
     @State private var photoSource: PhotoSource?
-    
-    @ObservedObject private var restaurantFormViewModel: RestaurantFormViewModel
-    
-    @Environment(\.managedObjectContext) var context
-    
     
     init() {
         let viewModel = RestaurantFormViewModel()
@@ -115,9 +112,6 @@ struct NewRestaurantView: View {
         }
         
     }
-    
-    
-    
     
     private func save() {
         let restaurant = Restaurant(context: context)
