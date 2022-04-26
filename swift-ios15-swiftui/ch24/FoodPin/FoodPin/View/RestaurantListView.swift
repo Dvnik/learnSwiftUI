@@ -1,0 +1,239 @@
+//
+//  ContentView.swift
+//  FoodPin
+//
+//  Created by Simon Ng on 21/9/2021.
+//
+
+import SwiftUI
+
+struct RestaurantListView: View {
+    @Environment(\.managedObjectContext) var context
+    @AppStorage("hasViewedWalkthrough") var hasViewedWalkthrough: Bool = false
+    
+    @FetchRequest(
+        entity: Restaurant.entity(),
+        sortDescriptors: [])
+    var restaurants: FetchedResults<Restaurant>
+    
+    @State private var showWalkthrough = false
+    @State private var showNewRestaurant = false
+    @State private var searchText = ""
+    
+    var body: some View {
+        NavigationView {
+            List {
+                if restaurants.count == 0 {
+                    Image("emptydata")
+                        .resizable()
+                        .scaledToFit()
+                } else {
+                    ForEach(restaurants.indices, id: \.self) { index in
+                        ZStack(alignment: .leading) {
+                            NavigationLink(destination: RestaurantDetailView(restaurant: restaurants[index])) {
+                                EmptyView()
+                            }
+                            .opacity(0)
+                            
+                            BasicTextImageRow(restaurant: restaurants[index])
+                        }
+                    }
+                    .onDelete(perform: deleteRecord)
+                    .listRowSeparator(.hidden)
+                }
+            }
+            .listStyle(.plain)
+            
+            .navigationTitle(String(localized: "FoodPin",comment: "FoodPin"))
+            .navigationBarTitleDisplayMode(.automatic)
+            .toolbar {
+                Button(action: {
+                    self.showNewRestaurant = true
+                }) {
+                    Image(systemName: "plus")
+                }
+            }
+        }
+        .accentColor(.primary)
+        .sheet(isPresented: $showNewRestaurant) {
+            NewRestaurantView()
+        }
+        .sheet(isPresented: $showWalkthrough) {
+            TutorialView()
+        }
+        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: String(localized: "Search restaurants...",comment: "Search restaurants..." ))
+        .onChange(of: searchText) { searchText in
+            let predicate = searchText.isEmpty ? NSPredicate(value: true) : NSPredicate(format: "name CONTAINS[c] %@ OR location CONTAINS[c] %@", searchText, searchText)
+            
+            restaurants.nsPredicate = predicate
+        }
+        .onAppear() {
+            showWalkthrough = hasViewedWalkthrough ? false : true
+        }
+
+    }
+    
+    private func deleteRecord(indexSet: IndexSet) {
+        
+        for index in indexSet {
+            let itemToDelete = restaurants[index]
+            context.delete(itemToDelete)
+        }
+
+        DispatchQueue.main.async {
+            do {
+                try context.save()
+
+            } catch {
+                print(error)
+            }
+        }
+    }
+}
+
+struct BasicTextImageRow: View {
+    
+    @ObservedObject var restaurant: Restaurant
+    
+    @State private var showOptions = false
+    @State private var showError = false
+    
+    var body: some View {
+        HStack(alignment: .top, spacing: 20) {
+            if let imageData = restaurant.image {
+                Image(uiImage: UIImage(data: imageData) ?? UIImage())
+                    .resizable()
+                    .frame(width: 120, height: 118)
+                    .cornerRadius(20)
+            }
+            
+            VStack(alignment: .leading) {
+                Text(restaurant.name)
+                    .font(.system(.title2, design: .rounded))
+                
+                Text(restaurant.type)
+                    .font(.system(.body, design: .rounded))
+                
+                Text(restaurant.location)
+                    .font(.system(.subheadline, design: .rounded))
+                    .foregroundColor(.gray)
+            }
+            
+            if restaurant.isFavorite {
+                Spacer()
+                
+                Image(systemName: "heart.fill")
+                    .foregroundColor(.yellow)
+            }
+        }
+        .contextMenu {
+            
+            Button(action: {
+                self.showError.toggle()
+            }) {
+                HStack {
+                    Text(String(localized: "Reserve a table", comment: "Reserve a table"))
+                    Image(systemName: "phone")
+                }
+            }
+            
+            Button(action: {
+                self.restaurant.isFavorite.toggle()
+            }) {
+                HStack {
+                    Text(restaurant.isFavorite ? String(localized: "Remove from favorites", comment: "Remove from favorites") : String(localized: "Mark as favorite", comment: "Mark as favorite"))
+                    Image(systemName: "heart")
+                }
+            }
+            
+            Button(action: {
+                self.showOptions.toggle()
+            }) {
+                HStack {
+                    Text(String(localized: "Share", comment: "Share"))
+                    Image(systemName: "square.and.arrow.up")
+                }
+            }
+        }
+        .alert(isPresented: $showError) {
+            Alert(title: Text(String(localized: "Not yet available",comment: "Not yet available")),
+                  message: Text(String(localized: "Sorry, this feature is not available yet. Please retry later.", comment: "Sorry, this feature is not available yet. Please retry later.")),
+                  primaryButton: .default(Text("OK")),
+                  secondaryButton: .cancel())
+        }
+        .sheet(isPresented: $showOptions) {
+            
+            let defaultText = "Just checking in at \(restaurant.name)"
+            
+            if let imageData = restaurant.image,
+               let imageToShare = UIImage(data: imageData) {
+                ActivityView(activityItems: [defaultText, imageToShare])
+            } else {
+                ActivityView(activityItems: [defaultText])
+            }
+        }
+    }
+}
+
+struct FullImageRow: View {
+    
+    var imageName: String
+    var name: String
+    var type: String
+    var location: String
+    
+    @Binding var isFavorite: Bool
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Image(imageName)
+                .resizable()
+                .scaledToFill()
+                .frame(height: 200)
+                .cornerRadius(20)
+            
+            HStack(alignment: .top) {
+                VStack(alignment: .leading) {
+                    Text(name)
+                        .font(.system(.title2, design: .rounded))
+                    
+                    Text(type)
+                        .font(.system(.body, design: .rounded))
+                    
+                    Text(location)
+                        .font(.system(.subheadline, design: .rounded))
+                        .foregroundColor(.gray)
+                }
+                
+                if isFavorite {
+                    Spacer()
+                    
+                    Image(systemName: "heart.fill")
+                        .foregroundColor(.yellow)
+                }
+            }
+            .padding(.horizontal)
+            .padding(.bottom)
+            
+        }
+    }
+}
+
+
+struct RestaurantListView_Previews: PreviewProvider {
+    static var previews: some View {
+        RestaurantListView()
+            .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        
+        RestaurantListView()
+            .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+            .preferredColorScheme(.dark)
+        
+        BasicTextImageRow(restaurant: (PersistenceController.testData?.first)!)
+            .previewLayout(.sizeThatFits)
+        
+        FullImageRow(imageName: "cafedeadend", name: "Cafe Deadend", type: "Cafe", location: "Hong Kong", isFavorite: .constant(true))
+            .previewLayout(.sizeThatFits)
+    }
+}
+
