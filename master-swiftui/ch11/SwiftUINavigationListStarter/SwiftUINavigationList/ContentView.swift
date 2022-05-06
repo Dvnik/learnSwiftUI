@@ -56,8 +56,8 @@ struct ContentView: View {
             }
             .listStyle(.plain)
             
-//            .navigationBarTitle("Restaurants", displayMode: .inline)
-            .navigationBarTitle("Restaurants", displayMode: .automatic)
+            .navigationBarTitle("Restaurants", displayMode: .inline)
+//            .navigationBarTitle("Restaurants", displayMode: .automatic)
             .navigationBarBackButtonHidden(true)
             
         }
