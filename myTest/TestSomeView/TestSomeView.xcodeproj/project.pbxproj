@@ -14,6 +14,11 @@
 		122E909F2837444B005793B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 122E909E2837444B005793B5 /* Assets.xcassets */; };
 		122E90A22837444B005793B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 122E90A12837444B005793B5 /* Preview Assets.xcassets */; };
 		122E90AA283744B2005793B5 /* NavigationTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E90A9283744B2005793B5 /* NavigationTestView.swift */; };
+		125603A3283C710300AF55C6 /* CountDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125603A2283C710300AF55C6 /* CountDownView.swift */; };
+		125603A5283C737C00AF55C6 /* PathShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125603A4283C737C00AF55C6 /* PathShapeView.swift */; };
+		125603A7283C89DB00AF55C6 /* SimpleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125603A6283C89DB00AF55C6 /* SimpleAnimationView.swift */; };
+		125603A9283CC92D00AF55C6 /* SwiftUITransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125603A8283CC92D00AF55C6 /* SwiftUITransitionView.swift */; };
+		125603AB283CDBA600AF55C6 /* EBMLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125603AA283CDBA600AF55C6 /* EBMLogoView.swift */; };
 		12E77183283B1F9B00A0309F /* PriceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E77182283B1F9B00A0309F /* PriceCardView.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +31,11 @@
 		122E909E2837444B005793B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		122E90A12837444B005793B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		122E90A9283744B2005793B5 /* NavigationTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTestView.swift; sourceTree = "<group>"; };
+		125603A2283C710300AF55C6 /* CountDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownView.swift; sourceTree = "<group>"; };
+		125603A4283C737C00AF55C6 /* PathShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathShapeView.swift; sourceTree = "<group>"; };
+		125603A6283C89DB00AF55C6 /* SimpleAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAnimationView.swift; sourceTree = "<group>"; };
+		125603A8283CC92D00AF55C6 /* SwiftUITransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITransitionView.swift; sourceTree = "<group>"; };
+		125603AA283CDBA600AF55C6 /* EBMLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBMLogoView.swift; sourceTree = "<group>"; };
 		12E77182283B1F9B00A0309F /* PriceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +93,11 @@
 				12E77182283B1F9B00A0309F /* PriceCardView.swift */,
 				1229BB09283B333A0007A718 /* ScrollCardView.swift */,
 				120A4DAE283B63120030A58C /* ButtonTestView.swift */,
+				125603A2283C710300AF55C6 /* CountDownView.swift */,
+				125603A4283C737C00AF55C6 /* PathShapeView.swift */,
+				125603A6283C89DB00AF55C6 /* SimpleAnimationView.swift */,
+				125603A8283CC92D00AF55C6 /* SwiftUITransitionView.swift */,
+				125603AA283CDBA600AF55C6 /* EBMLogoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -157,12 +172,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				125603A3283C710300AF55C6 /* CountDownView.swift in Sources */,
 				122E909D28374449005793B5 /* ContentView.swift in Sources */,
 				122E909B28374449005793B5 /* TestSomeViewApp.swift in Sources */,
 				1229BB0A283B333A0007A718 /* ScrollCardView.swift in Sources */,
 				12E77183283B1F9B00A0309F /* PriceCardView.swift in Sources */,
 				120A4DAF283B63120030A58C /* ButtonTestView.swift in Sources */,
+				125603A7283C89DB00AF55C6 /* SimpleAnimationView.swift in Sources */,
 				122E90AA283744B2005793B5 /* NavigationTestView.swift in Sources */,
+				125603A5283C737C00AF55C6 /* PathShapeView.swift in Sources */,
+				125603AB283CDBA600AF55C6 /* EBMLogoView.swift in Sources */,
+				125603A9283CC92D00AF55C6 /* SwiftUITransitionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
