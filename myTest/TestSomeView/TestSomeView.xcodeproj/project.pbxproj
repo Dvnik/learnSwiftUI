@@ -18,7 +18,6 @@
 		125603A5283C737C00AF55C6 /* PathShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125603A4283C737C00AF55C6 /* PathShapeView.swift */; };
 		125603A7283C89DB00AF55C6 /* SimpleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125603A6283C89DB00AF55C6 /* SimpleAnimationView.swift */; };
 		125603A9283CC92D00AF55C6 /* SwiftUITransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125603A8283CC92D00AF55C6 /* SwiftUITransitionView.swift */; };
-		125603AB283CDBA600AF55C6 /* EBMLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125603AA283CDBA600AF55C6 /* EBMLogoView.swift */; };
 		12E77183283B1F9B00A0309F /* PriceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E77182283B1F9B00A0309F /* PriceCardView.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +34,6 @@
 		125603A4283C737C00AF55C6 /* PathShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathShapeView.swift; sourceTree = "<group>"; };
 		125603A6283C89DB00AF55C6 /* SimpleAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAnimationView.swift; sourceTree = "<group>"; };
 		125603A8283CC92D00AF55C6 /* SwiftUITransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITransitionView.swift; sourceTree = "<group>"; };
-		125603AA283CDBA600AF55C6 /* EBMLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBMLogoView.swift; sourceTree = "<group>"; };
 		12E77182283B1F9B00A0309F /* PriceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,7 +95,6 @@
 				125603A4283C737C00AF55C6 /* PathShapeView.swift */,
 				125603A6283C89DB00AF55C6 /* SimpleAnimationView.swift */,
 				125603A8283CC92D00AF55C6 /* SwiftUITransitionView.swift */,
-				125603AA283CDBA600AF55C6 /* EBMLogoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,7 +178,6 @@
 				125603A7283C89DB00AF55C6 /* SimpleAnimationView.swift in Sources */,
 				122E90AA283744B2005793B5 /* NavigationTestView.swift in Sources */,
 				125603A5283C737C00AF55C6 /* PathShapeView.swift in Sources */,
-				125603AB283CDBA600AF55C6 /* EBMLogoView.swift in Sources */,
 				125603A9283CC92D00AF55C6 /* SwiftUITransitionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
