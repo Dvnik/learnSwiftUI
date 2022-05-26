@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var showDetailView = true
+    @State var showAlert = true
+    
     var body: some View {
         Text("Hello, world!")
-            .padding()
+//            .sheet(isPresented: $showDetailView) {
+//                ArticleDetailView(article: articles[0])
+//            }
+            .alert(isPresented: $showAlert) {
+                Alert(title: Text("Reminder"), message: Text("Are you sure you are finished reading the article?"), primaryButton: .default(Text("Yes"), action: { print("hello")}), secondaryButton: .cancel(Text("No")))
+            }
     }
 }
 

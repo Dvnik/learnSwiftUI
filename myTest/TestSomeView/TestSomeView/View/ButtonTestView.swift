@@ -11,18 +11,18 @@ import SwiftUI
 struct ButtonTestView: View {
     var body: some View {
         VStack {
-//            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-//                .fontWeight(.bold)
-//                .font(.title)
-//                .padding()
-//                .background(Color.purple)
-//                .cornerRadius(40)
-//                .foregroundColor(.white)
-//                .padding(10)
-//                .overlay(
-//                    RoundedRectangle(cornerRadius: 40)
-//                        .stroke(Color.purple, lineWidth: 5)
-//            )
+            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                .fontWeight(.bold)
+                .font(.title)
+                .padding()
+                .background(Color.purple)
+                .cornerRadius(40)
+                .foregroundColor(.white)
+                .padding(10)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 40)
+                        .stroke(Color.purple, lineWidth: 5)
+            )
 //
 //            Button(action: {
 //                print("Delete tapped!")
@@ -40,41 +40,41 @@ struct ButtonTestView: View {
 //                .cornerRadius(40)
 //            }
             
-            Button {
-                print("Delete tapped!")
-            } label: {
-                Label {
-                    Text("Delete")
-                        .fontWeight(.semibold)
-                        .font(.title)
-                } icon: {
-                    Image(systemName: "trash")
-                        .font(.title)
-                }
-                .padding()
-                .foregroundColor(.white)
-                .background(LinearGradient(gradient: Gradient(colors: [Color("DarkGreen"), Color("LightGreen")]), startPoint: .leading, endPoint: .trailing))
-                .cornerRadius(40)
-                .shadow(color: .gray, radius: 20.0, x: 20, y: 10)
-
-            }
-            Button(action: {
-                print("Delete tapped!")
-            }) {
-                HStack {
-                    Image(systemName: "trash")
-                        .font(.title)
-                    Text("Delete")
-                        .fontWeight(.semibold)
-                        .font(.title)
-                }
-                .frame(minWidth: 0, maxWidth: .infinity)
-                .padding()
-                .foregroundColor(.white)
-                .background(LinearGradient(gradient: Gradient(colors: [Color("DarkGreen"), Color("LightGreen")]), startPoint: .leading, endPoint: .trailing))
-                .cornerRadius(40)
-                .padding(.horizontal, 20)
-            }
+//            Button {
+//                print("Delete tapped!")
+//            } label: {
+//                Label {
+//                    Text("Delete")
+//                        .fontWeight(.semibold)
+//                        .font(.title)
+//                } icon: {
+//                    Image(systemName: "trash")
+//                        .font(.title)
+//                }
+//                .padding()
+//                .foregroundColor(.white)
+//                .background(LinearGradient(gradient: Gradient(colors: [Color("DarkGreen"), Color("LightGreen")]), startPoint: .leading, endPoint: .trailing))
+//                .cornerRadius(40)
+//                .shadow(color: .gray, radius: 20.0, x: 20, y: 10)
+//
+//            }
+//            Button(action: {
+//                print("Delete tapped!")
+//            }) {
+//                HStack {
+//                    Image(systemName: "trash")
+//                        .font(.title)
+//                    Text("Delete")
+//                        .fontWeight(.semibold)
+//                        .font(.title)
+//                }
+//                .frame(minWidth: 0, maxWidth: .infinity)
+//                .padding()
+//                .foregroundColor(.white)
+//                .background(LinearGradient(gradient: Gradient(colors: [Color("DarkGreen"), Color("LightGreen")]), startPoint: .leading, endPoint: .trailing))
+//                .cornerRadius(40)
+//                .padding(.horizontal, 20)
+//            }
             
             
             Button(action: {
