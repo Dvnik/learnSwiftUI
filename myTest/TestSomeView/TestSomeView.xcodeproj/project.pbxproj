@@ -21,12 +21,18 @@
 		125603A5283C737C00AF55C6 /* PathShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125603A4283C737C00AF55C6 /* PathShapeView.swift */; };
 		125603A7283C89DB00AF55C6 /* SimpleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125603A6283C89DB00AF55C6 /* SimpleAnimationView.swift */; };
 		125603A9283CC92D00AF55C6 /* SwiftUITransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125603A8283CC92D00AF55C6 /* SwiftUITransitionView.swift */; };
+		129E60E1284079D300726C48 /* UserRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E60E0284079D300726C48 /* UserRegistrationViewModel.swift */; };
+		129E60E328409DD000726C48 /* RestaurantDeleteRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E60E228409DD000726C48 /* RestaurantDeleteRowView.swift */; };
+		129E60E52840AC7500726C48 /* SimpleGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E60E42840AC7400726C48 /* SimpleGestureView.swift */; };
+		129E60E72840BD3F00726C48 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E60E62840BD3F00726C48 /* DraggableView.swift */; };
+		129E60E92840C0D400726C48 /* MagnifiableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E60E82840C0D400726C48 /* MagnifiableView.swift */; };
 		12E299C1283DC9F400D35E4B /* SimpleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E299C0283DC9F400D35E4B /* SimpleListView.swift */; };
 		12E299C3283DF8B700D35E4B /* ArticleNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E299C2283DF8B700D35E4B /* ArticleNavigationView.swift */; };
 		12E299C6283DF90200D35E4B /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E299C5283DF90200D35E4B /* Restaurant.swift */; };
 		12E299CA283E168F00D35E4B /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E299C9283E168F00D35E4B /* ArticleDetailView.swift */; };
 		12E299CC283E17B100D35E4B /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E299CB283E17B100D35E4B /* Article.swift */; };
 		12E77183283B1F9B00A0309F /* PriceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E77182283B1F9B00A0309F /* PriceCardView.swift */; };
+		12EA18C228405EFB000D4552 /* UIFormRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EA18C128405EFB000D4552 /* UIFormRegistrationView.swift */; };
 		12F21666283F5A0D000C2100 /* RestaurantNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F21665283F5A0D000C2100 /* RestaurantNavigationView.swift */; };
 		12F21668283F6129000C2100 /* RestaurantWithSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F21667283F6129000C2100 /* RestaurantWithSettingView.swift */; };
 		12F2166A283F61F8000C2100 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F21669283F61F8000C2100 /* SettingView.swift */; };
@@ -49,12 +55,18 @@
 		125603A4283C737C00AF55C6 /* PathShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathShapeView.swift; sourceTree = "<group>"; };
 		125603A6283C89DB00AF55C6 /* SimpleAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAnimationView.swift; sourceTree = "<group>"; };
 		125603A8283CC92D00AF55C6 /* SwiftUITransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITransitionView.swift; sourceTree = "<group>"; };
+		129E60E0284079D300726C48 /* UserRegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationViewModel.swift; sourceTree = "<group>"; };
+		129E60E228409DD000726C48 /* RestaurantDeleteRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDeleteRowView.swift; sourceTree = "<group>"; };
+		129E60E42840AC7400726C48 /* SimpleGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleGestureView.swift; sourceTree = "<group>"; };
+		129E60E62840BD3F00726C48 /* DraggableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
+		129E60E82840C0D400726C48 /* MagnifiableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifiableView.swift; sourceTree = "<group>"; };
 		12E299C0283DC9F400D35E4B /* SimpleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleListView.swift; sourceTree = "<group>"; };
 		12E299C2283DF8B700D35E4B /* ArticleNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleNavigationView.swift; sourceTree = "<group>"; };
 		12E299C5283DF90200D35E4B /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		12E299C9283E168F00D35E4B /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
 		12E299CB283E17B100D35E4B /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		12E77182283B1F9B00A0309F /* PriceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCardView.swift; sourceTree = "<group>"; };
+		12EA18C128405EFB000D4552 /* UIFormRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFormRegistrationView.swift; sourceTree = "<group>"; };
 		12F21665283F5A0D000C2100 /* RestaurantNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantNavigationView.swift; sourceTree = "<group>"; };
 		12F21667283F6129000C2100 /* RestaurantWithSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantWithSettingView.swift; sourceTree = "<group>"; };
 		12F21669283F61F8000C2100 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
@@ -91,6 +103,7 @@
 		122E909928374449005793B5 /* TestSomeView */ = {
 			isa = PBXGroup;
 			children = (
+				129E60DF284079C100726C48 /* ViewModel */,
 				12E299C4283DF8F000D35E4B /* Model */,
 				122E90A82837448F005793B5 /* View */,
 				122E909A28374449005793B5 /* TestSomeViewApp.swift */,
@@ -127,6 +140,9 @@
 				12F21665283F5A0D000C2100 /* RestaurantNavigationView.swift */,
 				12F21667283F6129000C2100 /* RestaurantWithSettingView.swift */,
 				12F21669283F61F8000C2100 /* SettingView.swift */,
+				12EA18C128405EFB000D4552 /* UIFormRegistrationView.swift */,
+				129E60E228409DD000726C48 /* RestaurantDeleteRowView.swift */,
+				129E60E42840AC7400726C48 /* SimpleGestureView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -137,8 +153,18 @@
 				1247484C283F14E000F80E76 /* ArticleRow.swift */,
 				12E299C9283E168F00D35E4B /* ArticleDetailView.swift */,
 				1247484F283F4C2400F80E76 /* RestaurantDetailView.swift */,
+				129E60E62840BD3F00726C48 /* DraggableView.swift */,
+				129E60E82840C0D400726C48 /* MagnifiableView.swift */,
 			);
 			path = ViewItem;
+			sourceTree = "<group>";
+		};
+		129E60DF284079C100726C48 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				129E60E0284079D300726C48 /* UserRegistrationViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		12E299C4283DF8F000D35E4B /* Model */ = {
@@ -221,17 +247,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				129E60E1284079D300726C48 /* UserRegistrationViewModel.swift in Sources */,
 				12E299C6283DF90200D35E4B /* Restaurant.swift in Sources */,
 				125603A3283C710300AF55C6 /* CountDownView.swift in Sources */,
 				1247484B283F14B500F80E76 /* UIModalView.swift in Sources */,
 				12F2166A283F61F8000C2100 /* SettingView.swift in Sources */,
 				1247484D283F14E000F80E76 /* ArticleRow.swift in Sources */,
+				129E60E92840C0D400726C48 /* MagnifiableView.swift in Sources */,
+				129E60E328409DD000726C48 /* RestaurantDeleteRowView.swift in Sources */,
 				12F21668283F6129000C2100 /* RestaurantWithSettingView.swift in Sources */,
+				12EA18C228405EFB000D4552 /* UIFormRegistrationView.swift in Sources */,
 				122E909D28374449005793B5 /* ContentView.swift in Sources */,
 				12E299C3283DF8B700D35E4B /* ArticleNavigationView.swift in Sources */,
 				122E909B28374449005793B5 /* TestSomeViewApp.swift in Sources */,
+				129E60E72840BD3F00726C48 /* DraggableView.swift in Sources */,
 				1229BB0A283B333A0007A718 /* ScrollCardView.swift in Sources */,
 				12E299C1283DC9F400D35E4B /* SimpleListView.swift in Sources */,
+				129E60E52840AC7500726C48 /* SimpleGestureView.swift in Sources */,
 				12E77183283B1F9B00A0309F /* PriceCardView.swift in Sources */,
 				120A4DAF283B63120030A58C /* ButtonTestView.swift in Sources */,
 				125603A7283C89DB00AF55C6 /* SimpleAnimationView.swift in Sources */,
