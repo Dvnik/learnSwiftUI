@@ -4,10 +4,11 @@
 //
 //  Created by Trixie Lulamoon on 2022/5/27.
 //
-
+// 想要再現的話需要調整一下內容，餐廳相關的View會有衝突
 import SwiftUI
 
 struct RestaurantDeleteRowView: View {
+    /*
     @State private var showActionSheet = false
 
     @State private var selectedRestaurant: Restaurant?
@@ -34,7 +35,9 @@ struct RestaurantDeleteRowView: View {
                    Restaurant(name: "Royal Oak", image: "royaloak"),
                    Restaurant(name: "CASK Pub and Kitchen", image: "caskpubkitchen")
     ]
+     */
     var body: some View {
+        /*
         List {
             ForEach(restaurants) { restaurant in
                 BasicImageRow(restaurant: restaurant)
@@ -96,8 +99,10 @@ struct RestaurantDeleteRowView: View {
             }
         }
         .listStyle(.plain)
+         */
+        Text("RestaurantDeleteRowView")
     }
-    
+    /*
     private func delete(item restaurant: Restaurant) {
         if let index = self.restaurants.firstIndex(where: { $0.id == restaurant.id }) {
             self.restaurants.remove(at: index)
@@ -109,6 +114,7 @@ struct RestaurantDeleteRowView: View {
             self.restaurants[index].isFavorite.toggle()
         }
     }
+     */
 }
 
 struct RestaurantDeleteRowView_Previews: PreviewProvider {

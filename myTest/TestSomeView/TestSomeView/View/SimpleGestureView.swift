@@ -147,4 +147,13 @@ enum DragState {
             return false
         }
     }
+    
+    var isDragging: Bool {
+        switch self {
+        case .pressing, .dragging:
+            return true
+        case .inactive:
+            return false
+        }
+    }
 }

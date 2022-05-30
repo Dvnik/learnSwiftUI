@@ -4,10 +4,10 @@
 //
 //  Created by Trixie Lulamoon on 2022/5/26.
 //
-
+// 想要再現的話需要調整一下內容，餐廳相關的View會有衝突
 import Foundation
 import Combine
-
+/*
 
 enum DisplayOrderType: Int, CaseIterable {
     case alphabetical = 0
@@ -70,3 +70,4 @@ final class SettingStore: ObservableObject {
     }
 
 }
+*/

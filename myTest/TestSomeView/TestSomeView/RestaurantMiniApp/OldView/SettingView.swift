@@ -10,6 +10,7 @@
 import SwiftUI
 
 struct SettingView: View {
+    /*
     @Environment(\.dismiss) var dismiss
     //SORT PREFERENCE
 //    private var displayOrders = [ "Alphabetical", "Show Favorite First", "Show Check-in First"]
@@ -22,8 +23,9 @@ struct SettingView: View {
     @State private var maxPriceLevel = 5
     // save store
     @EnvironmentObject var settingStore: SettingStore
-    
+    */
     var body: some View {
+        /*
         NavigationView {
             // 表格是一個預定好格式的View，裡面的物件就是表單的"項目"
             VStack {
@@ -99,11 +101,14 @@ struct SettingView: View {
             self.showCheckInOnly = self.settingStore.showCheckInOnly
             self.maxPriceLevel = self.settingStore.maxPriceLevel
         }
+         */
+        Text("SettingView.")
     }
 }
 
 struct SettingView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingView().environmentObject(SettingStore())
+        SettingView()
+//            .environmentObject(SettingStore())
     }
 }

@@ -6,11 +6,12 @@
 //
 //  來源：master SwiftUI ch13 by AppCoda
 // 僅展示From表格的建立方法，沒有實際功能
+// 想要再現的話需要調整一下內容，餐廳相關的View會有衝突
 
 import SwiftUI
 
 struct RestaurantWithSettingView: View {
-    
+    /*
     @State private var showSettings: Bool = false
         
     @State var restaurants = [
@@ -41,8 +42,10 @@ struct RestaurantWithSettingView: View {
     @State private var selectedRestaurant: Restaurant?
     
     @EnvironmentObject var settingStore: SettingStore
-    
+     
+    */
     var body: some View {
+        /*
         NavigationView {
             List {
                 ForEach(restaurants.sorted(by: self.settingStore.displayOrder.predicate())) { restaurant in
@@ -106,10 +109,10 @@ struct RestaurantWithSettingView: View {
                 SettingView().environmentObject(self.settingStore)
             }
         }
-        
-       
+        */
+       Text("RestaurantWithSettingView")
     }
-    
+    /*
     private func delete(item restaurant: Restaurant) {
         if let index = self.restaurants.firstIndex(where: { $0.id == restaurant.id }) {
             self.restaurants.remove(at: index)
@@ -132,10 +135,12 @@ struct RestaurantWithSettingView: View {
         
         return (!self.settingStore.showCheckInOnly || restaurant.isCheckIn) && (restaurant.priceLevel! <= self.settingStore.maxPriceLevel)
     }
+     */
 }
 
 struct RestaurantWithSettingView_Previews: PreviewProvider {
     static var previews: some View {
-        RestaurantWithSettingView().environmentObject(SettingStore())
+        RestaurantWithSettingView()
+//            .environmentObject(SettingStore())
     }
 }

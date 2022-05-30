@@ -31,13 +31,13 @@ struct UIModalView: View {
 //                }
 //            }
             // 也可以改由直接由選擇值物件判斷sheet展開的條件
-//            .sheet(item: $selectedArticle) { article in
-//                ArticleDetailView2(article: article)
-//            }
-            //全螢幕強制回應視圖的呈現 iOS 14 up
-            .fullScreenCover(item: $selectedArticle) { article in
+            .sheet(item: $selectedArticle) { article in
                 ArticleDetailView(article: article, type: .sheet)
             }
+            //全螢幕強制回應視圖的呈現 iOS 14 up
+//            .fullScreenCover(item: $selectedArticle) { article in
+//                ArticleDetailView(article: article, type: .sheet)
+//            }
             .navigationBarTitle("Your Reading")
             
             // 在IPad模式下，第一個出現的View物件會自動成為側邊欄位

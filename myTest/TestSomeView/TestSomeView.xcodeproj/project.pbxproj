@@ -10,7 +10,7 @@
 		120A4DAF283B63120030A58C /* ButtonTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120A4DAE283B63120030A58C /* ButtonTestView.swift */; };
 		1229BB0A283B333A0007A718 /* ScrollCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1229BB09283B333A0007A718 /* ScrollCardView.swift */; };
 		122E909B28374449005793B5 /* TestSomeViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E909A28374449005793B5 /* TestSomeViewApp.swift */; };
-		122E909D28374449005793B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E909C28374449005793B5 /* ContentView.swift */; };
+		122E909D28374449005793B5 /* TestContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E909C28374449005793B5 /* TestContentView.swift */; };
 		122E909F2837444B005793B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 122E909E2837444B005793B5 /* Assets.xcassets */; };
 		122E90A22837444B005793B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 122E90A12837444B005793B5 /* Preview Assets.xcassets */; };
 		122E90AA283744B2005793B5 /* NavigationTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E90A9283744B2005793B5 /* NavigationTestView.swift */; };
@@ -33,6 +33,8 @@
 		12E299CC283E17B100D35E4B /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E299CB283E17B100D35E4B /* Article.swift */; };
 		12E77183283B1F9B00A0309F /* PriceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E77182283B1F9B00A0309F /* PriceCardView.swift */; };
 		12EA18C228405EFB000D4552 /* UIFormRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EA18C128405EFB000D4552 /* UIFormRegistrationView.swift */; };
+		12EFCBF028446BC300155CA9 /* RestaurantBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EFCBEF28446BC300155CA9 /* RestaurantBottomSheetView.swift */; };
+		12EFCBF6284470BF00155CA9 /* RestaurantSheetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EFCBF5284470BF00155CA9 /* RestaurantSheetDetailView.swift */; };
 		12F21666283F5A0D000C2100 /* RestaurantNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F21665283F5A0D000C2100 /* RestaurantNavigationView.swift */; };
 		12F21668283F6129000C2100 /* RestaurantWithSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F21667283F6129000C2100 /* RestaurantWithSettingView.swift */; };
 		12F2166A283F61F8000C2100 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F21669283F61F8000C2100 /* SettingView.swift */; };
@@ -44,7 +46,7 @@
 		1229BB09283B333A0007A718 /* ScrollCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollCardView.swift; sourceTree = "<group>"; };
 		122E909728374449005793B5 /* TestSomeView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSomeView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		122E909A28374449005793B5 /* TestSomeViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSomeViewApp.swift; sourceTree = "<group>"; };
-		122E909C28374449005793B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		122E909C28374449005793B5 /* TestContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestContentView.swift; sourceTree = "<group>"; };
 		122E909E2837444B005793B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		122E90A12837444B005793B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		122E90A9283744B2005793B5 /* NavigationTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTestView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,8 @@
 		12E299CB283E17B100D35E4B /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		12E77182283B1F9B00A0309F /* PriceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCardView.swift; sourceTree = "<group>"; };
 		12EA18C128405EFB000D4552 /* UIFormRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFormRegistrationView.swift; sourceTree = "<group>"; };
+		12EFCBEF28446BC300155CA9 /* RestaurantBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantBottomSheetView.swift; sourceTree = "<group>"; };
+		12EFCBF5284470BF00155CA9 /* RestaurantSheetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantSheetDetailView.swift; sourceTree = "<group>"; };
 		12F21665283F5A0D000C2100 /* RestaurantNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantNavigationView.swift; sourceTree = "<group>"; };
 		12F21667283F6129000C2100 /* RestaurantWithSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantWithSettingView.swift; sourceTree = "<group>"; };
 		12F21669283F61F8000C2100 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				129E60DF284079C100726C48 /* ViewModel */,
+				12EFCBEC28446A8500155CA9 /* RestaurantMiniApp */,
 				12E299C4283DF8F000D35E4B /* Model */,
 				122E90A82837448F005793B5 /* View */,
 				122E909A28374449005793B5 /* TestSomeViewApp.swift */,
@@ -125,7 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				1247484E283F16A700F80E76 /* ViewItem */,
-				122E909C28374449005793B5 /* ContentView.swift */,
+				122E909C28374449005793B5 /* TestContentView.swift */,
 				122E90A9283744B2005793B5 /* NavigationTestView.swift */,
 				12E77182283B1F9B00A0309F /* PriceCardView.swift */,
 				1229BB09283B333A0007A718 /* ScrollCardView.swift */,
@@ -134,14 +139,9 @@
 				125603A4283C737C00AF55C6 /* PathShapeView.swift */,
 				125603A6283C89DB00AF55C6 /* SimpleAnimationView.swift */,
 				125603A8283CC92D00AF55C6 /* SwiftUITransitionView.swift */,
-				12E299C0283DC9F400D35E4B /* SimpleListView.swift */,
 				12E299C2283DF8B700D35E4B /* ArticleNavigationView.swift */,
 				1247484A283F14B500F80E76 /* UIModalView.swift */,
-				12F21665283F5A0D000C2100 /* RestaurantNavigationView.swift */,
-				12F21667283F6129000C2100 /* RestaurantWithSettingView.swift */,
-				12F21669283F61F8000C2100 /* SettingView.swift */,
 				12EA18C128405EFB000D4552 /* UIFormRegistrationView.swift */,
-				129E60E228409DD000726C48 /* RestaurantDeleteRowView.swift */,
 				129E60E42840AC7400726C48 /* SimpleGestureView.swift */,
 			);
 			path = View;
@@ -152,7 +152,6 @@
 			children = (
 				1247484C283F14E000F80E76 /* ArticleRow.swift */,
 				12E299C9283E168F00D35E4B /* ArticleDetailView.swift */,
-				1247484F283F4C2400F80E76 /* RestaurantDetailView.swift */,
 				129E60E62840BD3F00726C48 /* DraggableView.swift */,
 				129E60E82840C0D400726C48 /* MagnifiableView.swift */,
 			);
@@ -170,11 +169,58 @@
 		12E299C4283DF8F000D35E4B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				12E299C5283DF90200D35E4B /* Restaurant.swift */,
 				12E299CB283E17B100D35E4B /* Article.swift */,
-				12F2166B283F7293000C2100 /* SettingStore.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		12EFCBEB2844642D00155CA9 /* OldView */ = {
+			isa = PBXGroup;
+			children = (
+				12F21669283F61F8000C2100 /* SettingView.swift */,
+				12E299C0283DC9F400D35E4B /* SimpleListView.swift */,
+				1247484F283F4C2400F80E76 /* RestaurantDetailView.swift */,
+				12F21665283F5A0D000C2100 /* RestaurantNavigationView.swift */,
+				12F21667283F6129000C2100 /* RestaurantWithSettingView.swift */,
+				129E60E228409DD000726C48 /* RestaurantDeleteRowView.swift */,
+			);
+			path = OldView;
+			sourceTree = "<group>";
+		};
+		12EFCBEC28446A8500155CA9 /* RestaurantMiniApp */ = {
+			isa = PBXGroup;
+			children = (
+				12EFCBF128446C2600155CA9 /* OldModel */,
+				12EFCBEB2844642D00155CA9 /* OldView */,
+				12EFCBEE28446AB400155CA9 /* View */,
+				12EFCBED28446AAD00155CA9 /* Model */,
+			);
+			path = RestaurantMiniApp;
+			sourceTree = "<group>";
+		};
+		12EFCBED28446AAD00155CA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				12E299C5283DF90200D35E4B /* Restaurant.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		12EFCBEE28446AB400155CA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12EFCBEF28446BC300155CA9 /* RestaurantBottomSheetView.swift */,
+				12EFCBF5284470BF00155CA9 /* RestaurantSheetDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12EFCBF128446C2600155CA9 /* OldModel */ = {
+			isa = PBXGroup;
+			children = (
+				12F2166B283F7293000C2100 /* SettingStore.swift */,
+			);
+			path = OldModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +303,8 @@
 				129E60E328409DD000726C48 /* RestaurantDeleteRowView.swift in Sources */,
 				12F21668283F6129000C2100 /* RestaurantWithSettingView.swift in Sources */,
 				12EA18C228405EFB000D4552 /* UIFormRegistrationView.swift in Sources */,
-				122E909D28374449005793B5 /* ContentView.swift in Sources */,
+				12EFCBF028446BC300155CA9 /* RestaurantBottomSheetView.swift in Sources */,
+				122E909D28374449005793B5 /* TestContentView.swift in Sources */,
 				12E299C3283DF8B700D35E4B /* ArticleNavigationView.swift in Sources */,
 				122E909B28374449005793B5 /* TestSomeViewApp.swift in Sources */,
 				129E60E72840BD3F00726C48 /* DraggableView.swift in Sources */,
@@ -270,6 +317,7 @@
 				12F21666283F5A0D000C2100 /* RestaurantNavigationView.swift in Sources */,
 				12E299CA283E168F00D35E4B /* ArticleDetailView.swift in Sources */,
 				122E90AA283744B2005793B5 /* NavigationTestView.swift in Sources */,
+				12EFCBF6284470BF00155CA9 /* RestaurantSheetDetailView.swift in Sources */,
 				12474850283F4C2400F80E76 /* RestaurantDetailView.swift in Sources */,
 				125603A5283C737C00AF55C6 /* PathShapeView.swift in Sources */,
 				125603A9283CC92D00AF55C6 /* SwiftUITransitionView.swift in Sources */,

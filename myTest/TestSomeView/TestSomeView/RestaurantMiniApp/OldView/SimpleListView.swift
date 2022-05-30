@@ -4,10 +4,12 @@
 //
 //  Created by Trixie Lulamoon on 2022/5/25.
 //
+// 想要再現的話需要調整一下內容，餐廳相關的View會有衝突
 
 import SwiftUI
 
 struct SimpleListView: View {
+    /*
     var restaurants = [ Restaurant(name: "Cafe Deadend", image: "cafedeadend"),
                Restaurant(name: "Homei", image: "homei"),
                Restaurant(name: "Teakha", image: "teakha"),
@@ -30,7 +32,7 @@ struct SimpleListView: View {
                Restaurant(name: "Royal Oak", image: "royaloak"),
                Restaurant(name: "CASK Pub and Kitchen", image: "caskpubkitchen")
 ]
-    
+    */
     var body: some View {
 //        List {
 //            ForEach(restaurants.indices) { index in
@@ -44,7 +46,7 @@ struct SimpleListView: View {
 //        }
 //        .listStyle(.plain)
         
-        
+        /*
         HStack {
             
             Image("royaloak")
@@ -70,8 +72,9 @@ struct SimpleListView: View {
             }
             .listStyle(.plain)
         }
+        */
         
-        
+        Text("SimpleListView")
     }
 }
 
@@ -81,7 +84,7 @@ struct SimpleListView_Previews: PreviewProvider {
     }
 }
 
-
+/*
 
 struct BasicImageRow: View {
     var restaurant: Restaurant
@@ -128,3 +131,4 @@ struct FullImageRow: View {
         }
     }
 }
+ */

@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  TestContentView.swift
 //  TestSomeView
 //
 //  Created by Trixie Lulamoon on 2022/5/20.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct TestContentView: View {
     @State var showDetailView = true
     @State var showAlert = true
     
@@ -67,6 +67,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        TestContentView()
     }
 }
