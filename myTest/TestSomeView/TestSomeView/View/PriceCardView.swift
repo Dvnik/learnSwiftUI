@@ -52,7 +52,8 @@ struct PriceCardView_Previews: PreviewProvider {
     static var previews: some View {
         // previewLayout不會用時機規格預覽，如果這個View是小元件就適合這種預覽方式
         PriceCardView(title: "Basic", price: "$9", cycleLbl: "per month", textColor: .black, bgColor: .yellow, icon: "wand.and.rays")
-            .previewLayout(.fixed(width: 300, height: 300))
+            .previewLayout(.sizeThatFits)
+            .padding()
         
         PriceCardExampleView()
     }

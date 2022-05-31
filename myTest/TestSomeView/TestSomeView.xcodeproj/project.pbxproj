@@ -21,6 +21,12 @@
 		125603A5283C737C00AF55C6 /* PathShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125603A4283C737C00AF55C6 /* PathShapeView.swift */; };
 		125603A7283C89DB00AF55C6 /* SimpleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125603A6283C89DB00AF55C6 /* SimpleAnimationView.swift */; };
 		125603A9283CC92D00AF55C6 /* SwiftUITransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125603A8283CC92D00AF55C6 /* SwiftUITransitionView.swift */; };
+		129953182845A47700B7BC33 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129953172845A47700B7BC33 /* Trip.swift */; };
+		1299531B2845A4A600B7BC33 /* TinderTripMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1299531A2845A4A600B7BC33 /* TinderTripMainView.swift */; };
+		1299531D2845A4D500B7BC33 /* TinderCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1299531C2845A4D500B7BC33 /* TinderCardView.swift */; };
+		1299531F2845BDA400B7BC33 /* DragState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1299531E2845BDA300B7BC33 /* DragState.swift */; };
+		129953222845C25F00B7BC33 /* TinderCardDragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129953212845C25F00B7BC33 /* TinderCardDragView.swift */; };
+		129953252845FA6100B7BC33 /* Ex+AnyTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129953242845FA6100B7BC33 /* Ex+AnyTransition.swift */; };
 		129E60E1284079D300726C48 /* UserRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E60E0284079D300726C48 /* UserRegistrationViewModel.swift */; };
 		129E60E328409DD000726C48 /* RestaurantDeleteRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E60E228409DD000726C48 /* RestaurantDeleteRowView.swift */; };
 		129E60E52840AC7500726C48 /* SimpleGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E60E42840AC7400726C48 /* SimpleGestureView.swift */; };
@@ -57,6 +63,12 @@
 		125603A4283C737C00AF55C6 /* PathShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathShapeView.swift; sourceTree = "<group>"; };
 		125603A6283C89DB00AF55C6 /* SimpleAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAnimationView.swift; sourceTree = "<group>"; };
 		125603A8283CC92D00AF55C6 /* SwiftUITransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITransitionView.swift; sourceTree = "<group>"; };
+		129953172845A47700B7BC33 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		1299531A2845A4A600B7BC33 /* TinderTripMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderTripMainView.swift; sourceTree = "<group>"; };
+		1299531C2845A4D500B7BC33 /* TinderCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderCardView.swift; sourceTree = "<group>"; };
+		1299531E2845BDA300B7BC33 /* DragState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragState.swift; sourceTree = "<group>"; };
+		129953212845C25F00B7BC33 /* TinderCardDragView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderCardDragView.swift; sourceTree = "<group>"; };
+		129953242845FA6100B7BC33 /* Ex+AnyTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+AnyTransition.swift"; sourceTree = "<group>"; };
 		129E60E0284079D300726C48 /* UserRegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationViewModel.swift; sourceTree = "<group>"; };
 		129E60E228409DD000726C48 /* RestaurantDeleteRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDeleteRowView.swift; sourceTree = "<group>"; };
 		129E60E42840AC7400726C48 /* SimpleGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleGestureView.swift; sourceTree = "<group>"; };
@@ -107,6 +119,8 @@
 		122E909928374449005793B5 /* TestSomeView */ = {
 			isa = PBXGroup;
 			children = (
+				129953232845FA4B00B7BC33 /* Extension */,
+				129953152845A44600B7BC33 /* TinderTripMiniApp */,
 				129E60DF284079C100726C48 /* ViewModel */,
 				12EFCBEC28446A8500155CA9 /* RestaurantMiniApp */,
 				12E299C4283DF8F000D35E4B /* Model */,
@@ -158,6 +172,49 @@
 			path = ViewItem;
 			sourceTree = "<group>";
 		};
+		129953152845A44600B7BC33 /* TinderTripMiniApp */ = {
+			isa = PBXGroup;
+			children = (
+				129953202845C22000B7BC33 /* ViewModel */,
+				129953192845A47B00B7BC33 /* View */,
+				129953162845A44E00B7BC33 /* Model */,
+			);
+			path = TinderTripMiniApp;
+			sourceTree = "<group>";
+		};
+		129953162845A44E00B7BC33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				129953172845A47700B7BC33 /* Trip.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		129953192845A47B00B7BC33 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1299531A2845A4A600B7BC33 /* TinderTripMainView.swift */,
+				1299531C2845A4D500B7BC33 /* TinderCardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		129953202845C22000B7BC33 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				129953212845C25F00B7BC33 /* TinderCardDragView.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		129953232845FA4B00B7BC33 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				129953242845FA6100B7BC33 /* Ex+AnyTransition.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		129E60DF284079C100726C48 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				12E299CB283E17B100D35E4B /* Article.swift */,
+				1299531E2845BDA300B7BC33 /* DragState.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -304,6 +362,7 @@
 				12F21668283F6129000C2100 /* RestaurantWithSettingView.swift in Sources */,
 				12EA18C228405EFB000D4552 /* UIFormRegistrationView.swift in Sources */,
 				12EFCBF028446BC300155CA9 /* RestaurantBottomSheetView.swift in Sources */,
+				1299531F2845BDA400B7BC33 /* DragState.swift in Sources */,
 				122E909D28374449005793B5 /* TestContentView.swift in Sources */,
 				12E299C3283DF8B700D35E4B /* ArticleNavigationView.swift in Sources */,
 				122E909B28374449005793B5 /* TestSomeViewApp.swift in Sources */,
@@ -312,10 +371,15 @@
 				12E299C1283DC9F400D35E4B /* SimpleListView.swift in Sources */,
 				129E60E52840AC7500726C48 /* SimpleGestureView.swift in Sources */,
 				12E77183283B1F9B00A0309F /* PriceCardView.swift in Sources */,
+				129953182845A47700B7BC33 /* Trip.swift in Sources */,
 				120A4DAF283B63120030A58C /* ButtonTestView.swift in Sources */,
 				125603A7283C89DB00AF55C6 /* SimpleAnimationView.swift in Sources */,
 				12F21666283F5A0D000C2100 /* RestaurantNavigationView.swift in Sources */,
+				129953252845FA6100B7BC33 /* Ex+AnyTransition.swift in Sources */,
+				1299531D2845A4D500B7BC33 /* TinderCardView.swift in Sources */,
 				12E299CA283E168F00D35E4B /* ArticleDetailView.swift in Sources */,
+				1299531B2845A4A600B7BC33 /* TinderTripMainView.swift in Sources */,
+				129953222845C25F00B7BC33 /* TinderCardDragView.swift in Sources */,
 				122E90AA283744B2005793B5 /* NavigationTestView.swift in Sources */,
 				12EFCBF6284470BF00155CA9 /* RestaurantSheetDetailView.swift in Sources */,
 				12474850283F4C2400F80E76 /* RestaurantDetailView.swift in Sources */,
