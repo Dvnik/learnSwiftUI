@@ -32,11 +32,17 @@
 		129E60E52840AC7500726C48 /* SimpleGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E60E42840AC7400726C48 /* SimpleGestureView.swift */; };
 		129E60E72840BD3F00726C48 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E60E62840BD3F00726C48 /* DraggableView.swift */; };
 		129E60E92840C0D400726C48 /* MagnifiableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E60E82840C0D400726C48 /* MagnifiableView.swift */; };
+		12A425EC2846F69F009D202E /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A425EA2846F69F009D202E /* Card.swift */; };
+		12A425ED2846F69F009D202E /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A425EB2846F69F009D202E /* Transaction.swift */; };
+		12A425F12846F6B0009D202E /* TransactionHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A425EF2846F6B0009D202E /* TransactionHistoryView.swift */; };
+		12A425F42846F6E0009D202E /* AppleWalletMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A425F32846F6E0009D202E /* AppleWalletMainView.swift */; };
 		12E299C1283DC9F400D35E4B /* SimpleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E299C0283DC9F400D35E4B /* SimpleListView.swift */; };
 		12E299C3283DF8B700D35E4B /* ArticleNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E299C2283DF8B700D35E4B /* ArticleNavigationView.swift */; };
 		12E299C6283DF90200D35E4B /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E299C5283DF90200D35E4B /* Restaurant.swift */; };
 		12E299CA283E168F00D35E4B /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E299C9283E168F00D35E4B /* ArticleDetailView.swift */; };
 		12E299CC283E17B100D35E4B /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E299CB283E17B100D35E4B /* Article.swift */; };
+		12E5B2942846FCBF00D07FFE /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E5B2932846FCBF00D07FFE /* CreditCardView.swift */; };
+		12E5B29628474A1100D07FFE /* CardListDragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E5B29528474A1100D07FFE /* CardListDragView.swift */; };
 		12E77183283B1F9B00A0309F /* PriceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E77182283B1F9B00A0309F /* PriceCardView.swift */; };
 		12EA18C228405EFB000D4552 /* UIFormRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EA18C128405EFB000D4552 /* UIFormRegistrationView.swift */; };
 		12EFCBF028446BC300155CA9 /* RestaurantBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EFCBEF28446BC300155CA9 /* RestaurantBottomSheetView.swift */; };
@@ -74,11 +80,17 @@
 		129E60E42840AC7400726C48 /* SimpleGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleGestureView.swift; sourceTree = "<group>"; };
 		129E60E62840BD3F00726C48 /* DraggableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
 		129E60E82840C0D400726C48 /* MagnifiableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifiableView.swift; sourceTree = "<group>"; };
+		12A425EA2846F69F009D202E /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		12A425EB2846F69F009D202E /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		12A425EF2846F6B0009D202E /* TransactionHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionHistoryView.swift; sourceTree = "<group>"; };
+		12A425F32846F6E0009D202E /* AppleWalletMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleWalletMainView.swift; sourceTree = "<group>"; };
 		12E299C0283DC9F400D35E4B /* SimpleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleListView.swift; sourceTree = "<group>"; };
 		12E299C2283DF8B700D35E4B /* ArticleNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleNavigationView.swift; sourceTree = "<group>"; };
 		12E299C5283DF90200D35E4B /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		12E299C9283E168F00D35E4B /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
 		12E299CB283E17B100D35E4B /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		12E5B2932846FCBF00D07FFE /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
+		12E5B29528474A1100D07FFE /* CardListDragView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListDragView.swift; sourceTree = "<group>"; };
 		12E77182283B1F9B00A0309F /* PriceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCardView.swift; sourceTree = "<group>"; };
 		12EA18C128405EFB000D4552 /* UIFormRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFormRegistrationView.swift; sourceTree = "<group>"; };
 		12EFCBEF28446BC300155CA9 /* RestaurantBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantBottomSheetView.swift; sourceTree = "<group>"; };
@@ -119,10 +131,11 @@
 		122E909928374449005793B5 /* TestSomeView */ = {
 			isa = PBXGroup;
 			children = (
-				129953232845FA4B00B7BC33 /* Extension */,
+				12A425E82846F215009D202E /* AppleWalletApp */,
 				129953152845A44600B7BC33 /* TinderTripMiniApp */,
 				129E60DF284079C100726C48 /* ViewModel */,
 				12EFCBEC28446A8500155CA9 /* RestaurantMiniApp */,
+				129953232845FA4B00B7BC33 /* Extension */,
 				12E299C4283DF8F000D35E4B /* Model */,
 				122E90A82837448F005793B5 /* View */,
 				122E909A28374449005793B5 /* TestSomeViewApp.swift */,
@@ -221,6 +234,35 @@
 				129E60E0284079D300726C48 /* UserRegistrationViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		12A425E82846F215009D202E /* AppleWalletApp */ = {
+			isa = PBXGroup;
+			children = (
+				12A425E92846F69F009D202E /* Model */,
+				12A425EE2846F6B0009D202E /* View */,
+			);
+			path = AppleWalletApp;
+			sourceTree = "<group>";
+		};
+		12A425E92846F69F009D202E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				12A425EA2846F69F009D202E /* Card.swift */,
+				12A425EB2846F69F009D202E /* Transaction.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		12A425EE2846F6B0009D202E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12A425EF2846F6B0009D202E /* TransactionHistoryView.swift */,
+				12A425F32846F6E0009D202E /* AppleWalletMainView.swift */,
+				12E5B2932846FCBF00D07FFE /* CreditCardView.swift */,
+				12E5B29528474A1100D07FFE /* CardListDragView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		12E299C4283DF8F000D35E4B /* Model */ = {
@@ -352,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				129E60E1284079D300726C48 /* UserRegistrationViewModel.swift in Sources */,
+				12A425F12846F6B0009D202E /* TransactionHistoryView.swift in Sources */,
 				12E299C6283DF90200D35E4B /* Restaurant.swift in Sources */,
 				125603A3283C710300AF55C6 /* CountDownView.swift in Sources */,
 				1247484B283F14B500F80E76 /* UIModalView.swift in Sources */,
@@ -359,14 +402,18 @@
 				1247484D283F14E000F80E76 /* ArticleRow.swift in Sources */,
 				129E60E92840C0D400726C48 /* MagnifiableView.swift in Sources */,
 				129E60E328409DD000726C48 /* RestaurantDeleteRowView.swift in Sources */,
+				12A425EC2846F69F009D202E /* Card.swift in Sources */,
 				12F21668283F6129000C2100 /* RestaurantWithSettingView.swift in Sources */,
+				12E5B2942846FCBF00D07FFE /* CreditCardView.swift in Sources */,
 				12EA18C228405EFB000D4552 /* UIFormRegistrationView.swift in Sources */,
 				12EFCBF028446BC300155CA9 /* RestaurantBottomSheetView.swift in Sources */,
 				1299531F2845BDA400B7BC33 /* DragState.swift in Sources */,
 				122E909D28374449005793B5 /* TestContentView.swift in Sources */,
+				12A425F42846F6E0009D202E /* AppleWalletMainView.swift in Sources */,
 				12E299C3283DF8B700D35E4B /* ArticleNavigationView.swift in Sources */,
 				122E909B28374449005793B5 /* TestSomeViewApp.swift in Sources */,
 				129E60E72840BD3F00726C48 /* DraggableView.swift in Sources */,
+				12E5B29628474A1100D07FFE /* CardListDragView.swift in Sources */,
 				1229BB0A283B333A0007A718 /* ScrollCardView.swift in Sources */,
 				12E299C1283DC9F400D35E4B /* SimpleListView.swift in Sources */,
 				129E60E52840AC7500726C48 /* SimpleGestureView.swift in Sources */,
@@ -380,6 +427,7 @@
 				12E299CA283E168F00D35E4B /* ArticleDetailView.swift in Sources */,
 				1299531B2845A4A600B7BC33 /* TinderTripMainView.swift in Sources */,
 				129953222845C25F00B7BC33 /* TinderCardDragView.swift in Sources */,
+				12A425ED2846F69F009D202E /* Transaction.swift in Sources */,
 				122E90AA283744B2005793B5 /* NavigationTestView.swift in Sources */,
 				12EFCBF6284470BF00155CA9 /* RestaurantSheetDetailView.swift in Sources */,
 				12474850283F4C2400F80E76 /* RestaurantDetailView.swift in Sources */,

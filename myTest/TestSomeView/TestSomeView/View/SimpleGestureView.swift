@@ -91,7 +91,7 @@ struct SimpleGestureView: View {
 
                         switch value {
                         case .first(true):
-                            state = .pressing
+                            state = .pressing()
                         case .second(true, let drag):
                             state = .dragging(translation: drag?.translation ?? .zero)
                         default:

@@ -36,7 +36,7 @@ struct TinderCardDragView<Content>: View where Content: View {
                 .updating(self.$dragState, body: { value, state, transaction in
                     switch value {
                     case .first(true):
-                        state = .pressing
+                        state = .pressing()
                     case .second(true, let drag):
                         state = .dragging(translation: drag?.translation ?? .zero)
                     default:

@@ -41,8 +41,8 @@ struct WalletView: View {
                                        }
                                    })
                                    .exclusively(before: LongPressGesture(minimumDuration: 0.05)
-                                   .sequenced(before: DragGesture())
-                                   .updating(self.$dragState, body: { (value, state, transaction) in
+                                    .sequenced(before: DragGesture())
+                                    .updating(self.$dragState, body: { (value, state, transaction) in
                                        switch value {
                                        case .first(true):
                                            state = .pressing(index: self.index(for: card))
