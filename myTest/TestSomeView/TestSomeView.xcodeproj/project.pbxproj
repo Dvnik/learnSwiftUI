@@ -17,6 +17,11 @@
 		1247484B283F14B500F80E76 /* UIModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1247484A283F14B500F80E76 /* UIModalView.swift */; };
 		1247484D283F14E000F80E76 /* ArticleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1247484C283F14E000F80E76 /* ArticleRow.swift */; };
 		12474850283F4C2400F80E76 /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1247484F283F4C2400F80E76 /* RestaurantDetailView.swift */; };
+		1251090B28475DB80028B4EC /* Loan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1251090A28475DB80028B4EC /* Loan.swift */; };
+		1251090D28475EB40028B4EC /* LoanStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1251090C28475EB40028B4EC /* LoanStore.swift */; };
+		12510910284763920028B4EC /* LoanCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1251090F284763920028B4EC /* LoanCellView.swift */; };
+		125109122847671A0028B4EC /* KivaLoanMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125109112847671A0028B4EC /* KivaLoanMainView.swift */; };
+		12510914284768D10028B4EC /* LoanFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12510913284768D10028B4EC /* LoanFilterView.swift */; };
 		125603A3283C710300AF55C6 /* CountDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125603A2283C710300AF55C6 /* CountDownView.swift */; };
 		125603A5283C737C00AF55C6 /* PathShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125603A4283C737C00AF55C6 /* PathShapeView.swift */; };
 		125603A7283C89DB00AF55C6 /* SimpleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125603A6283C89DB00AF55C6 /* SimpleAnimationView.swift */; };
@@ -36,6 +41,13 @@
 		12A425ED2846F69F009D202E /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A425EB2846F69F009D202E /* Transaction.swift */; };
 		12A425F12846F6B0009D202E /* TransactionHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A425EF2846F6B0009D202E /* TransactionHistoryView.swift */; };
 		12A425F42846F6E0009D202E /* AppleWalletMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A425F32846F6E0009D202E /* AppleWalletMainView.swift */; };
+		12C1687A284855B5003E6CA5 /* ToDoListMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C16879284855B5003E6CA5 /* ToDoListMainView.swift */; };
+		12C1687C284855C8003E6CA5 /* CheckboxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C1687B284855C8003E6CA5 /* CheckboxStyle.swift */; };
+		12C1687E2848566D003E6CA5 /* NewToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C1687D2848566D003E6CA5 /* NewToDoView.swift */; };
+		12C1688028485686003E6CA5 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C1687F28485686003E6CA5 /* ToDoItem.swift */; };
+		12C1688228485911003E6CA5 /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C1688128485911003E6CA5 /* BlankView.swift */; };
+		12C1688428485FFD003E6CA5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C1688328485FFD003E6CA5 /* Persistence.swift */; };
+		12C1688828486606003E6CA5 /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 12C1688628486606003E6CA5 /* ToDoList.xcdatamodeld */; };
 		12E299C1283DC9F400D35E4B /* SimpleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E299C0283DC9F400D35E4B /* SimpleListView.swift */; };
 		12E299C3283DF8B700D35E4B /* ArticleNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E299C2283DF8B700D35E4B /* ArticleNavigationView.swift */; };
 		12E299C6283DF90200D35E4B /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E299C5283DF90200D35E4B /* Restaurant.swift */; };
@@ -65,6 +77,11 @@
 		1247484A283F14B500F80E76 /* UIModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIModalView.swift; sourceTree = "<group>"; };
 		1247484C283F14E000F80E76 /* ArticleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRow.swift; sourceTree = "<group>"; };
 		1247484F283F4C2400F80E76 /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
+		1251090A28475DB80028B4EC /* Loan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan.swift; sourceTree = "<group>"; };
+		1251090C28475EB40028B4EC /* LoanStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanStore.swift; sourceTree = "<group>"; };
+		1251090F284763920028B4EC /* LoanCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCellView.swift; sourceTree = "<group>"; };
+		125109112847671A0028B4EC /* KivaLoanMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KivaLoanMainView.swift; sourceTree = "<group>"; };
+		12510913284768D10028B4EC /* LoanFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanFilterView.swift; sourceTree = "<group>"; };
 		125603A2283C710300AF55C6 /* CountDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownView.swift; sourceTree = "<group>"; };
 		125603A4283C737C00AF55C6 /* PathShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathShapeView.swift; sourceTree = "<group>"; };
 		125603A6283C89DB00AF55C6 /* SimpleAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAnimationView.swift; sourceTree = "<group>"; };
@@ -84,6 +101,13 @@
 		12A425EB2846F69F009D202E /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		12A425EF2846F6B0009D202E /* TransactionHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionHistoryView.swift; sourceTree = "<group>"; };
 		12A425F32846F6E0009D202E /* AppleWalletMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleWalletMainView.swift; sourceTree = "<group>"; };
+		12C16879284855B5003E6CA5 /* ToDoListMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListMainView.swift; sourceTree = "<group>"; };
+		12C1687B284855C8003E6CA5 /* CheckboxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxStyle.swift; sourceTree = "<group>"; };
+		12C1687D2848566D003E6CA5 /* NewToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoView.swift; sourceTree = "<group>"; };
+		12C1687F28485686003E6CA5 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		12C1688128485911003E6CA5 /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
+		12C1688328485FFD003E6CA5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		12C1688728486606003E6CA5 /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
 		12E299C0283DC9F400D35E4B /* SimpleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleListView.swift; sourceTree = "<group>"; };
 		12E299C2283DF8B700D35E4B /* ArticleNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleNavigationView.swift; sourceTree = "<group>"; };
 		12E299C5283DF90200D35E4B /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
@@ -131,6 +155,8 @@
 		122E909928374449005793B5 /* TestSomeView */ = {
 			isa = PBXGroup;
 			children = (
+				12C1686E28485334003E6CA5 /* ToDoListApp */,
+				1251090828475D9D0028B4EC /* KivaLoanApp */,
 				12A425E82846F215009D202E /* AppleWalletApp */,
 				129953152845A44600B7BC33 /* TinderTripMiniApp */,
 				129E60DF284079C100726C48 /* ViewModel */,
@@ -181,8 +207,37 @@
 				12E299C9283E168F00D35E4B /* ArticleDetailView.swift */,
 				129E60E62840BD3F00726C48 /* DraggableView.swift */,
 				129E60E82840C0D400726C48 /* MagnifiableView.swift */,
+				12C1688128485911003E6CA5 /* BlankView.swift */,
 			);
 			path = ViewItem;
+			sourceTree = "<group>";
+		};
+		1251090828475D9D0028B4EC /* KivaLoanApp */ = {
+			isa = PBXGroup;
+			children = (
+				1251090E284763800028B4EC /* View */,
+				1251090928475DAD0028B4EC /* Model */,
+			);
+			path = KivaLoanApp;
+			sourceTree = "<group>";
+		};
+		1251090928475DAD0028B4EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1251090A28475DB80028B4EC /* Loan.swift */,
+				1251090C28475EB40028B4EC /* LoanStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1251090E284763800028B4EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1251090F284763920028B4EC /* LoanCellView.swift */,
+				125109112847671A0028B4EC /* KivaLoanMainView.swift */,
+				12510913284768D10028B4EC /* LoanFilterView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		129953152845A44600B7BC33 /* TinderTripMiniApp */ = {
@@ -263,6 +318,43 @@
 				12E5B29528474A1100D07FFE /* CardListDragView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		12C1686E28485334003E6CA5 /* ToDoListApp */ = {
+			isa = PBXGroup;
+			children = (
+				12C16885284865EE003E6CA5 /* Data */,
+				12C1687228485350003E6CA5 /* View */,
+				12C1686F28485347003E6CA5 /* Model */,
+			);
+			path = ToDoListApp;
+			sourceTree = "<group>";
+		};
+		12C1686F28485347003E6CA5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				12C1687F28485686003E6CA5 /* ToDoItem.swift */,
+				12C1688328485FFD003E6CA5 /* Persistence.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		12C1687228485350003E6CA5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12C16879284855B5003E6CA5 /* ToDoListMainView.swift */,
+				12C1687B284855C8003E6CA5 /* CheckboxStyle.swift */,
+				12C1687D2848566D003E6CA5 /* NewToDoView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12C16885284865EE003E6CA5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				12C1688628486606003E6CA5 /* ToDoList.xcdatamodeld */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		12E299C4283DF8F000D35E4B /* Model */ = {
@@ -395,7 +487,9 @@
 			files = (
 				129E60E1284079D300726C48 /* UserRegistrationViewModel.swift in Sources */,
 				12A425F12846F6B0009D202E /* TransactionHistoryView.swift in Sources */,
+				12C1688428485FFD003E6CA5 /* Persistence.swift in Sources */,
 				12E299C6283DF90200D35E4B /* Restaurant.swift in Sources */,
+				12C1687A284855B5003E6CA5 /* ToDoListMainView.swift in Sources */,
 				125603A3283C710300AF55C6 /* CountDownView.swift in Sources */,
 				1247484B283F14B500F80E76 /* UIModalView.swift in Sources */,
 				12F2166A283F61F8000C2100 /* SettingView.swift in Sources */,
@@ -410,29 +504,39 @@
 				1299531F2845BDA400B7BC33 /* DragState.swift in Sources */,
 				122E909D28374449005793B5 /* TestContentView.swift in Sources */,
 				12A425F42846F6E0009D202E /* AppleWalletMainView.swift in Sources */,
+				1251090D28475EB40028B4EC /* LoanStore.swift in Sources */,
 				12E299C3283DF8B700D35E4B /* ArticleNavigationView.swift in Sources */,
 				122E909B28374449005793B5 /* TestSomeViewApp.swift in Sources */,
 				129E60E72840BD3F00726C48 /* DraggableView.swift in Sources */,
 				12E5B29628474A1100D07FFE /* CardListDragView.swift in Sources */,
+				12C1688028485686003E6CA5 /* ToDoItem.swift in Sources */,
+				12C1688828486606003E6CA5 /* ToDoList.xcdatamodeld in Sources */,
 				1229BB0A283B333A0007A718 /* ScrollCardView.swift in Sources */,
 				12E299C1283DC9F400D35E4B /* SimpleListView.swift in Sources */,
 				129E60E52840AC7500726C48 /* SimpleGestureView.swift in Sources */,
 				12E77183283B1F9B00A0309F /* PriceCardView.swift in Sources */,
 				129953182845A47700B7BC33 /* Trip.swift in Sources */,
+				12C1687C284855C8003E6CA5 /* CheckboxStyle.swift in Sources */,
+				12510910284763920028B4EC /* LoanCellView.swift in Sources */,
 				120A4DAF283B63120030A58C /* ButtonTestView.swift in Sources */,
 				125603A7283C89DB00AF55C6 /* SimpleAnimationView.swift in Sources */,
 				12F21666283F5A0D000C2100 /* RestaurantNavigationView.swift in Sources */,
 				129953252845FA6100B7BC33 /* Ex+AnyTransition.swift in Sources */,
 				1299531D2845A4D500B7BC33 /* TinderCardView.swift in Sources */,
+				12C1687E2848566D003E6CA5 /* NewToDoView.swift in Sources */,
+				12C1688228485911003E6CA5 /* BlankView.swift in Sources */,
 				12E299CA283E168F00D35E4B /* ArticleDetailView.swift in Sources */,
 				1299531B2845A4A600B7BC33 /* TinderTripMainView.swift in Sources */,
 				129953222845C25F00B7BC33 /* TinderCardDragView.swift in Sources */,
+				1251090B28475DB80028B4EC /* Loan.swift in Sources */,
 				12A425ED2846F69F009D202E /* Transaction.swift in Sources */,
 				122E90AA283744B2005793B5 /* NavigationTestView.swift in Sources */,
 				12EFCBF6284470BF00155CA9 /* RestaurantSheetDetailView.swift in Sources */,
+				125109122847671A0028B4EC /* KivaLoanMainView.swift in Sources */,
 				12474850283F4C2400F80E76 /* RestaurantDetailView.swift in Sources */,
 				125603A5283C737C00AF55C6 /* PathShapeView.swift in Sources */,
 				125603A9283CC92D00AF55C6 /* SwiftUITransitionView.swift in Sources */,
+				12510914284768D10028B4EC /* LoanFilterView.swift in Sources */,
 				12F2166C283F7293000C2100 /* SettingStore.swift in Sources */,
 				12E299CC283E17B100D35E4B /* Article.swift in Sources */,
 			);
@@ -633,6 +737,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		12C1688628486606003E6CA5 /* ToDoList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				12C1688728486606003E6CA5 /* ToDoList.xcdatamodel */,
+			);
+			currentVersion = 12C1688728486606003E6CA5 /* ToDoList.xcdatamodel */;
+			path = ToDoList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 122E908F28374449005793B5 /* Project object */;
 }

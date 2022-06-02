@@ -9,10 +9,13 @@ import SwiftUI
 
 @main
 struct TestSomeViewApp: App {
+    let persistenceController = PersistenceController.shared
+    
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-            SimpleAnimationView()
+            ToDoListMainView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

@@ -20,6 +20,52 @@ struct TinderCardDragView<Content>: View where Content: View {
     var eventDragLeft: () -> Void
     var eventDragRight: () -> Void
     
+    var longPressHandle: some Gesture {
+        LongPressGesture(minimumDuration: 0.01)
+            .sequenced(before: DragGesture())
+            .updating(self.$dragState, body: { value, state, transaction in
+                switch value {
+                case .first(true):
+                    state = .pressing()
+                case .second(true, let drag):
+                    state = .dragging(translation: drag?.translation ?? .zero)
+                default:
+                    break
+                }
+                // change state
+                self.isDargging =  self.dragState.isDragging
+            })// end .updating
+            .onChanged({ (value) in
+                guard case .second(true, let drag?) = value else {
+                    return
+                }
+
+                if drag.translation.width < -self.dragThreshold {
+                    self.removalTransition = .leadingBottom
+                }
+
+                if drag.translation.width > self.dragThreshold {
+                    self.removalTransition = .trailingBottom
+                }
+
+            })// end .onChange
+            .onEnded({ value in
+                guard case .second(true, let drag?) = value else {
+                    return
+                }
+                
+                if drag.translation.width < -self.dragThreshold {
+                    self.eventDragLeft()
+                }
+                
+                if drag.translation.width > self.dragThreshold {
+                    self.eventDragRight()
+                }
+                
+            })//end .onEnded
+        
+    }
+    
     var body: some View {
         let dragWidth = self.dragState.translation.width
         let dragHeight = self.dragState.translation.height
@@ -31,49 +77,7 @@ struct TinderCardDragView<Content>: View where Content: View {
             .rotationEffect(Angle(degrees: rotateNum))
             .animation(.interpolatingSpring(stiffness: 180, damping: 100))
             .transition(self.removalTransition)
-            .gesture(LongPressGesture(minimumDuration: 0.01)
-                .sequenced(before: DragGesture())
-                .updating(self.$dragState, body: { value, state, transaction in
-                    switch value {
-                    case .first(true):
-                        state = .pressing()
-                    case .second(true, let drag):
-                        state = .dragging(translation: drag?.translation ?? .zero)
-                    default:
-                        break
-                    }
-                    // change state
-                    self.isDargging =  self.dragState.isDragging
-                })// end .updating
-                .onChanged({ (value) in
-                    guard case .second(true, let drag?) = value else {
-                        return
-                    }
-
-                    if drag.translation.width < -self.dragThreshold {
-                        self.removalTransition = .leadingBottom
-                    }
-
-                    if drag.translation.width > self.dragThreshold {
-                        self.removalTransition = .trailingBottom
-                    }
-
-                })// end .onChange
-                .onEnded({ value in
-                    guard case .second(true, let drag?) = value else {
-                        return
-                    }
-                    
-                    if drag.translation.width < -self.dragThreshold {
-                        self.eventDragLeft()
-                    }
-                    
-                    if drag.translation.width > self.dragThreshold {
-                        self.eventDragRight()
-                    }
-                    
-                })//end .onEnded
-            )// end .gesture
+            .gesture(longPressHandle)// end .gesture
             .overlay {
                 ZStack {
                     Image(systemName: "x.circle")
