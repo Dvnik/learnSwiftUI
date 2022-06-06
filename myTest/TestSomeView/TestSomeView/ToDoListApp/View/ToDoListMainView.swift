@@ -8,16 +8,11 @@
 import SwiftUI
 
 struct ToDoListMainView: View {
-    @Environment(\.managedObjectContext) var context
-    
-    @FetchRequest(
-        entity: ToDoItem.entity(),
-        sortDescriptors: [ NSSortDescriptor(keyPath: \ToDoItem.priorityNum, ascending: false) ])
-    var todoItems: FetchedResults<ToDoItem>
     
     @State private var newItemName: String = ""
     @State private var newItemPriority: Priority = .normal
     @State private var showNewTask = false
+    @State private var searchText = ""
     
     var body: some View {
         ZStack {
@@ -39,12 +34,11 @@ struct ToDoListMainView: View {
                 }//end hstack
                 .padding()
                 
-                List {
-                    ForEach(todoItems) { todoItem in
-                        ToDoListRow(todoItem: todoItem)
-                    }
-                    .onDelete(perform: deleteTask)
-                }
+//                SearchBar(text: $searchText)
+                MySearchBar(text: $searchText)
+                    .padding(.top, -20)
+                
+                FilteredList($searchText)
                
             }//end Vstack
             .rotation3DEffect(Angle(degrees: showNewTask ? 5 : 0), axis: (x: 1, y: 0, z: 0))
@@ -53,10 +47,7 @@ struct ToDoListMainView: View {
             .onAppear {
                 UITableView.appearance().separatorColor = .clear
             }
-            // If there is no data, show an empty view
-            if todoItems.count == 0 {
-                NoDataView()
-            }
+            
             
             // Display the "Add new todo" view
             if showNewTask {
@@ -75,28 +66,14 @@ struct ToDoListMainView: View {
     }
     
     
-    //MARK: Functions
-    private func deleteTask(indexSet: IndexSet) {
-        
-        for index in indexSet {
-            let itemToDelete = todoItems[index]
-            context.delete(itemToDelete)
-        }
-        
-        DispatchQueue.main.async {
-            do {
-                try context.save()
-            } catch {
-                print(error)
-            }
-        }
-    }
+    
 }
 
 struct ToDoListMainView_Previews: PreviewProvider {
     static var previews: some View {
         ToDoListMainView()
             .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        
     }
 }
 
@@ -146,3 +123,4 @@ struct ToDoListRow: View {
         }
     }
 }
+
