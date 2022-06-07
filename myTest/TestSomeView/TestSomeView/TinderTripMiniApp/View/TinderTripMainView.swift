@@ -14,7 +14,7 @@ struct TinderTripMainView: View {
         var views = [TinderCardView]()
         
         for index in 0..<2 {
-            views.append(TinderCardView(image: trips[index].image, title: trips[index].destination))
+            views.append(TinderCardView(image: tinderTrips[index].image, title: tinderTrips[index].destination))
         }
         
         return views
@@ -134,7 +134,7 @@ struct TinderTripMainView: View {
         cardViews.removeFirst()
 
         self.lastIndex += 1
-        let trip = trips[lastIndex % trips.count]
+        let trip = tinderTrips[lastIndex % tinderTrips.count]
 
         let newCardView = TinderCardView(image: trip.image, title: trip.destination)
 

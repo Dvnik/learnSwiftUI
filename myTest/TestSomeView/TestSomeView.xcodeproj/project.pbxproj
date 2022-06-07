@@ -29,7 +29,11 @@
 		125603A5283C737C00AF55C6 /* PathShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125603A4283C737C00AF55C6 /* PathShapeView.swift */; };
 		125603A7283C89DB00AF55C6 /* SimpleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125603A6283C89DB00AF55C6 /* SimpleAnimationView.swift */; };
 		125603A9283CC92D00AF55C6 /* SwiftUITransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125603A8283CC92D00AF55C6 /* SwiftUITransitionView.swift */; };
-		129953182845A47700B7BC33 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129953172845A47700B7BC33 /* Trip.swift */; };
+		12723B04284EEE0B00B95EAD /* TripMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12723B03284EEE0B00B95EAD /* TripMainView.swift */; };
+		12723B06284EF00100B95EAD /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12723B05284EF00100B95EAD /* Trip.swift */; };
+		12723B08284EF02100B95EAD /* TripCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12723B07284EF02100B95EAD /* TripCardView.swift */; };
+		12723B0A284F22A600B95EAD /* TripDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12723B09284F22A600B95EAD /* TripDetailView.swift */; };
+		129953182845A47700B7BC33 /* TinderTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129953172845A47700B7BC33 /* TinderTrip.swift */; };
 		1299531B2845A4A600B7BC33 /* TinderTripMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1299531A2845A4A600B7BC33 /* TinderTripMainView.swift */; };
 		1299531D2845A4D500B7BC33 /* TinderCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1299531C2845A4D500B7BC33 /* TinderCardView.swift */; };
 		1299531F2845BDA400B7BC33 /* DragState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1299531E2845BDA300B7BC33 /* DragState.swift */; };
@@ -96,7 +100,11 @@
 		125603A4283C737C00AF55C6 /* PathShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathShapeView.swift; sourceTree = "<group>"; };
 		125603A6283C89DB00AF55C6 /* SimpleAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAnimationView.swift; sourceTree = "<group>"; };
 		125603A8283CC92D00AF55C6 /* SwiftUITransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITransitionView.swift; sourceTree = "<group>"; };
-		129953172845A47700B7BC33 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		12723B03284EEE0B00B95EAD /* TripMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripMainView.swift; sourceTree = "<group>"; };
+		12723B05284EF00100B95EAD /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		12723B07284EF02100B95EAD /* TripCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCardView.swift; sourceTree = "<group>"; };
+		12723B09284F22A600B95EAD /* TripDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailView.swift; sourceTree = "<group>"; };
+		129953172845A47700B7BC33 /* TinderTrip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderTrip.swift; sourceTree = "<group>"; };
 		1299531A2845A4A600B7BC33 /* TinderTripMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderTripMainView.swift; sourceTree = "<group>"; };
 		1299531C2845A4D500B7BC33 /* TinderCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderCardView.swift; sourceTree = "<group>"; };
 		1299531E2845BDA300B7BC33 /* DragState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragState.swift; sourceTree = "<group>"; };
@@ -169,6 +177,7 @@
 		122E909928374449005793B5 /* TestSomeView */ = {
 			isa = PBXGroup;
 			children = (
+				12723B00284EED3200B95EAD /* TripApp */,
 				123F7A94284D8CE200D2221E /* StorePageApp */,
 				12C1686E28485334003E6CA5 /* ToDoListApp */,
 				1251090828475D9D0028B4EC /* KivaLoanApp */,
@@ -281,6 +290,32 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		12723B00284EED3200B95EAD /* TripApp */ = {
+			isa = PBXGroup;
+			children = (
+				12723B02284EED6500B95EAD /* Model */,
+				12723B01284EED6000B95EAD /* View */,
+			);
+			path = TripApp;
+			sourceTree = "<group>";
+		};
+		12723B01284EED6000B95EAD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12723B03284EEE0B00B95EAD /* TripMainView.swift */,
+				12723B07284EF02100B95EAD /* TripCardView.swift */,
+				12723B09284F22A600B95EAD /* TripDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12723B02284EED6500B95EAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		129953152845A44600B7BC33 /* TinderTripMiniApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,7 +329,7 @@
 		129953162845A44E00B7BC33 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				129953172845A47700B7BC33 /* Trip.swift */,
+				129953172845A47700B7BC33 /* TinderTrip.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -405,6 +440,7 @@
 		12E299C4283DF8F000D35E4B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				12723B05284EF00100B95EAD /* Trip.swift */,
 				12E299CB283E17B100D35E4B /* Article.swift */,
 				1299531E2845BDA300B7BC33 /* DragState.swift */,
 			);
@@ -542,6 +578,7 @@
 				12F2166A283F61F8000C2100 /* SettingView.swift in Sources */,
 				1247484D283F14E000F80E76 /* ArticleRow.swift in Sources */,
 				129E60E92840C0D400726C48 /* MagnifiableView.swift in Sources */,
+				12723B06284EF00100B95EAD /* Trip.swift in Sources */,
 				129E60E328409DD000726C48 /* RestaurantDeleteRowView.swift in Sources */,
 				12A425EC2846F69F009D202E /* Card.swift in Sources */,
 				12F21668283F6129000C2100 /* RestaurantWithSettingView.swift in Sources */,
@@ -562,12 +599,14 @@
 				1229BB0A283B333A0007A718 /* ScrollCardView.swift in Sources */,
 				12E299C1283DC9F400D35E4B /* SimpleListView.swift in Sources */,
 				129E60E52840AC7500726C48 /* SimpleGestureView.swift in Sources */,
+				12723B08284EF02100B95EAD /* TripCardView.swift in Sources */,
 				12E77183283B1F9B00A0309F /* PriceCardView.swift in Sources */,
-				129953182845A47700B7BC33 /* Trip.swift in Sources */,
+				129953182845A47700B7BC33 /* TinderTrip.swift in Sources */,
 				12C1687C284855C8003E6CA5 /* CheckboxStyle.swift in Sources */,
 				12510910284763920028B4EC /* LoanCellView.swift in Sources */,
 				120A4DAF283B63120030A58C /* ButtonTestView.swift in Sources */,
 				125603A7283C89DB00AF55C6 /* SimpleAnimationView.swift in Sources */,
+				12723B04284EEE0B00B95EAD /* TripMainView.swift in Sources */,
 				123F7A9A284D8D5200D2221E /* StoreArticle.swift in Sources */,
 				12F21666283F5A0D000C2100 /* RestaurantNavigationView.swift in Sources */,
 				129953252845FA6100B7BC33 /* Ex+AnyTransition.swift in Sources */,
@@ -582,6 +621,7 @@
 				12A425ED2846F69F009D202E /* Transaction.swift in Sources */,
 				122E90AA283744B2005793B5 /* NavigationTestView.swift in Sources */,
 				12C168922848A361003E6CA5 /* MySearchBar.swift in Sources */,
+				12723B0A284F22A600B95EAD /* TripDetailView.swift in Sources */,
 				12EFCBF6284470BF00155CA9 /* RestaurantSheetDetailView.swift in Sources */,
 				125109122847671A0028B4EC /* KivaLoanMainView.swift in Sources */,
 				12474850283F4C2400F80E76 /* RestaurantDetailView.swift in Sources */,

@@ -7,13 +7,8 @@
 
 import Foundation
 
-struct Trip {
-    var destination: String
-    var image: String
-}
-
 #if DEBUG
-var trips = [ Trip(destination: "Yosemite, USA", image: "yosemite-usa"),
+var tinderTrips = [ Trip(destination: "Yosemite, USA", image: "yosemite-usa"),
               Trip(destination: "Venice, Italy", image: "venice-italy"),
               Trip(destination: "Hong Kong", image: "hong-kong"),
               Trip(destination: "Barcelona, Spain", image: "barcelona-spain"),
